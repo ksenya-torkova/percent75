@@ -427,8 +427,15 @@ template {
 }
 body {
   width: 1920px;
-  font-family: 'Roboto Slab', 'Arial', serif;
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
   font-weight: 400;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1b1b1b;
+  background-color: #ffffff;
 }
 img {
   max-width: 100%;
@@ -449,6 +456,89 @@ input[type='radio'].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.site-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  width: 301px;
+  height: 100%;
+  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.main-nav__button {
+  background-color: transparent;
+  border: none;
+}
 .quote {
   quotes: '«' '»';
+}
+.logo--wide {
+  width: 272px;
+}
+.logo__link {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  text-decoration: none;
+  color: #1b1b1b;
+  line-height: 1.2;
+}
+.logo__text {
+  margin-left: 5px;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 12px;
+}
+.logo__title {
+  font-family: 'Aldo', 'Helvetica', sans-serif;
+  font-size: 44px;
+}
+.main--stat {
+  background-color: #55902a;
+  background-image: url('../img/stat-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 661px;
+  padding-top: 142px;
+}
+.wrapper {
+  width: 1142px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro--stat {
+  padding-left: 32px;
+  padding-bottom: 110px;
+  width: 742px;
+  min-height: 178px;
+  background-image: url('../img/grow@1.png');
+  background-repeat: no-repeat;
+  background-size: 212px 228px;
+  background-position: 99.6% -7px;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 48px;
+  position: relative;
+}
+.title--white {
+  color: #ffffff;
+}
+.title--white.title--underline::after {
+  position: absolute;
+  content: '';
+  width: 110px;
+  height: 3px;
+  background-color: #ffffff;
+  left: -1px;
+  bottom: -19px;
+}
+.site-footer__wrapper {
+  width: 1154px;
+  margin-left: auto;
+  margin-right: auto;
 }
