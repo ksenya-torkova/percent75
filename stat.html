@@ -10,72 +10,74 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="main-nav">
-        <button class="main-nav__button  main-nav__button--close">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
-        <div class="main-nav__quote">
-          <q class="quote">Деньги должны работать всегда</q>
-          <cite class="quote__author">Рокфеллер</cite>
-        </div>
-        <div class="main-nav__logo  logo  logo--wide">
-          <a href="index.html" class="logo__link">
-            <img src="img/logo-darkgreen.svg" alt="лого percent75" width="60" height="60">
-            <p class="logo__text">
-              <span class="logo__title">PERCENT75</span>
-              Инвестиционная платформа
-            </p>
-          </a>
-        </div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link">О Нас</a>
+      <button class="site-header__button  site-header__button--close">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <div class="site-header__wrapper  site-header__wrapper--no-js">
+        <nav class="main-nav">
+          <div class="main-nav__quote  quote">
+            <q class="quote__content">Деньги должны работать всегда</q>
+            <cite class="quote__author">Рокфеллер</cite>
+          </div>
+          <div class="main-nav__logo  logo  logo--wide">
+            <a href="index.html" class="logo__link">
+              <img src="img/logo-darkgreen.svg" alt="лого percent75" width="60" height="60">
+              <p class="logo__text">
+                <span class="logo__title">PERCENT75</span>
+                Инвестиционная платформа
+              </p>
+            </a>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">О Нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="confidential.html" class="main-nav__link">Политика конфиденциальности</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="invest.html" class="main-nav__link">Инвестиционные тарифы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="career.html" class="main-nav__link">Карьера</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="calc.html" class="main-nav__link">Калькулятор</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="faq.html" class="main-nav__link">FAQ</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--active">Статистика</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social  social--white  social--wide">
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
           </li>
-          <li class="main-nav__item">
-            <a href="confidential.html" class="main-nav__link">Политика конфиденциальности</a>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
           </li>
-          <li class="main-nav__item">
-            <a href="invest.html" class="main-nav__link">Инвестиционные тарифы</a>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
           </li>
-          <li class="main-nav__item">
-            <a href="career.html" class="main-nav__link">Карьера</a>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
           </li>
-          <li class="main-nav__item">
-            <a href="calc.html" class="main-nav__link">Калькулятор</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="faq.html" class="main-nav__link">FAQ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link  main-nav__link--active">Статистика</a>
+          <li class="social__item">
+            <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
           </li>
         </ul>
-      </nav>
-      <ul class="social  social--white  social--wide">
-        <li class="social__item">
-          <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
-        </li>
-      </ul>
-      <ul class="language-toogle">
-        <li class="language-toogle__item">
-          <a href="#" class="language-toogle__button">Eng<span class="visually-hidden">enable english version</span></a>
-        </li>
-        <li class="language-toogle__item">
-          <a href="#" class="language-toogle__button  language-toogle__button--active">Rus<span class="visually-hidden">переключиться на русскую версию сайта</span></a>
-        </li>
-      </ul>
+        <ul class="language-toogle">
+          <li class="language-toogle__item  language-toogle__item--en">
+            <a href="#" class="language-toogle__button">Eng<span class="visually-hidden">enable english version</span></a>
+          </li>
+          <li class="language-toogle__item  language-toogle__item--ru">
+            <a class="language-toogle__button  language-toogle__button--active">Rus<span class="visually-hidden">переключиться на русскую версию сайта</span></a>
+          </li>
+        </ul>
+      </div>
     </header>
     
     <main class="main  main--stat">
@@ -85,19 +87,19 @@
         </div>
         <div class="stats">
           <p class="stats__info">
-            <span class="stats__value">1000000 дней</span>
+            <span class="stats__value"><b class="stats__number">1000000</b>дней</span>
             Проект работает
           </p>
           <p class="stats__info">
-            <span class="stats__value">1000000 участников</span>
+            <span class="stats__value"><b class="stats__number">1000000</b>участников</span>
             Внесли депозитов
           </p>
           <p class="stats__info">
-            <span class="stats__value">1000000 USD</span>
+            <span class="stats__value"><b class="stats__number">1000000</b>USD</span>
             Выплат процентов
           </p>
           <p class="stats__info">
-            <span class="stats__value">1000000 людей</span>
+            <span class="stats__value"><b class="stats__number">1000000</b>людей</span>
             Активных участников
           </p>
         </div>
@@ -105,40 +107,47 @@
     </main>
     
     <footer class="site-footer">
-      <div class="site-footer__wrapper">
-        <div class="logo logo--small">
+      <div class="wrapper  wrapper--flex">
+        <div class="logo  logo--small">
           <a href="index.html"><img src="img/logo-grey.svg" alt="лого percent75" width="131" height="130"></a>
         </div>
-        <div class="site-footer__subwrapper">
+        <div class="site-footer__wrapper">
           <div class="site-footer__nav">
-            <a href="index.html" class="site-footer__link">О Нас</a>
-            <a href="confidential.html" class="site-footer__link">Политика конфиденциальности</a>
-            <a href="invest.html" class="site-footer__link">Инвестиционные тарифы</a>
-            <a href="career.html" class="site-footer__link">Карьера</a>
-            <a href="calc.html" class="site-footer__link">Калькулятор</a>
-            <a href="faq.html" class="site-footer__link">FAQ</a>
-            <a class="site-footer__link">Статистика</a>
-            <ul class="social  social--dark  social--narrow">
-              <li class="social__item">
-                <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
-              </li>
-            </ul>
+            <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--wide">
+              <a href="index.html" class="site-footer__link">О Нас</a>
+              <a href="confidential.html" class="site-footer__link">Политика конфиденциальности</a>
+              <a href="invest.html" class="site-footer__link">Инвестиционные тарифы</a>
+            </div>
+            <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--narrow">
+              <a href="career.html" class="site-footer__link">Карьера</a>
+              <a href="calc.html" class="site-footer__link">Калькулятор</a>
+              <a href="faq.html" class="site-footer__link">FAQ</a>
+            </div>
+            <div class="site-footer__nav-wrapper  site-footer__nav-wrapper--middle">
+              <a class="site-footer__link">Статистика</a>
+              <ul class="social  social--dark  social--narrow">
+                <li class="social__item">
+                  <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <p class="site-footer__note">Уважаемые инвесторы, помните, инвестиции всегда сопряжены с рисками. Просчитывайте и обдумывайте свои шаги.</p>
+          <p class="site-footer__note  note">Уважаемые инвесторы, помните, инвестиции всегда сопряжены с рисками. Просчитывайте и обдумывайте свои шаги.</p>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
