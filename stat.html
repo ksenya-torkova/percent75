@@ -11,13 +11,21 @@
   <body>
     <header class="site-header">
       <nav class="main-nav">
-        <button class="main-nav__button  main-nav__button--close"></button>
+        <button class="main-nav__button  main-nav__button--close">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
         <div class="main-nav__quote">
           <q class="quote">Деньги должны работать всегда</q>
           <cite class="quote__author">Рокфеллер</cite>
         </div>
         <div class="main-nav__logo  logo  logo--wide">
-          <a><img src="img/" alt="лого percent75" width="228" height="61"></a>
+          <a href="index.html" class="logo__link">
+            <img src="img/logo-darkgreen.svg" alt="лого percent75" width="60" height="60">
+            <p class="logo__text">
+              <span class="logo__title">PERCENT75</span>
+              Инвестиционная платформа
+            </p>
+          </a>
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -97,37 +105,39 @@
     </main>
     
     <footer class="site-footer">
-      <div class="logo logo--small">
-        <a><img src="img/" alt="лого percent75" width="131" height="130"></a>
-      </div>
       <div class="site-footer__wrapper">
-        <div class="site-footer__nav">
-          <a href="index.html" class="site-footer__link">О Нас</a>
-          <a href="confidential.html" class="site-footer__link">Политика конфиденциальности</a>
-          <a href="invest.html" class="site-footer__link">Инвестиционные тарифы</a>
-          <a href="career.html" class="site-footer__link">Карьера</a>
-          <a href="calc.html" class="site-footer__link">Калькулятор</a>
-          <a href="faq.html" class="site-footer__link">FAQ</a>
-          <a class="site-footer__link">Статистика</a>
-          <ul class="social  social--dark  social--narrow">
-            <li class="social__item">
-              <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
-            </li>
-          </ul>
+        <div class="logo logo--small">
+          <a href="index.html"><img src="img/logo-grey.svg" alt="лого percent75" width="131" height="130"></a>
         </div>
-        <p class="site-footer__note">Уважаемые инвесторы, помните, инвестиции всегда сопряжены с рисками. Просчитывайте и обдумывайте свои шаги.</p>
+        <div class="site-footer__subwrapper">
+          <div class="site-footer__nav">
+            <a href="index.html" class="site-footer__link">О Нас</a>
+            <a href="confidential.html" class="site-footer__link">Политика конфиденциальности</a>
+            <a href="invest.html" class="site-footer__link">Инвестиционные тарифы</a>
+            <a href="career.html" class="site-footer__link">Карьера</a>
+            <a href="calc.html" class="site-footer__link">Калькулятор</a>
+            <a href="faq.html" class="site-footer__link">FAQ</a>
+            <a class="site-footer__link">Статистика</a>
+            <ul class="social  social--dark  social--narrow">
+              <li class="social__item">
+                <a href="#" class="social__link  social__link--vk"><span class="visually-hidden">мы во вконтакте</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link  social__link--inst"><span class="visually-hidden">мы в инстаграм</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link  social__link--tg"><span class="visually-hidden">наш канал в телеграме</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link  social__link--yt"><span class="visually-hidden">наш канал на ютьюб</span></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link  social__link--fb"><span class="visually-hidden">мы на фейсбуке</span></a>
+              </li>
+            </ul>
+          </div>
+          <p class="site-footer__note">Уважаемые инвесторы, помните, инвестиции всегда сопряжены с рисками. Просчитывайте и обдумывайте свои шаги.</p>
+        </div>
       </div>
     </footer>
   </body>

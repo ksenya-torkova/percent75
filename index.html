@@ -11,13 +11,21 @@
   <body>
     <header class="site-header">
       <nav class="main-nav">
-        <button class="main-nav__button  main-nav__button--close"></button>
+        <button class="main-nav__button  main-nav__button--close">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
         <div class="main-nav__quote">
           <q class="quote">Деньги должны работать всегда</q>
           <cite class="quote__author">Рокфеллер</cite>
         </div>
         <div class="main-nav__logo  logo  logo--wide">
-          <a><img src="img/" alt="лого percent75" width="228" height="61"></a>
+          <a class="logo__link">
+            <img src="img/logo-darkgreen.svg" alt="лого percent75" width="60" height="60">
+            <p class="logo__text">
+              <span class="logo__title">PERCENT75</span>
+              Инвестиционная платформа
+            </p>
+          </a>
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -75,7 +83,7 @@
       <div class="wrapper">
         <div class="intro  intro--welcome">
           <div class="logo  logo--big">
-            <img src="img/" alt="лого percent75">
+            <a><img src="img/logo-grey.svg" alt="лого percent75" width="131" height="130"></a>
           </div>
           <h2 class="title  title--underline">О нас</h2>
           <h3 class="subtitle">Стабильность – залог УСПЕХА!</h3>
