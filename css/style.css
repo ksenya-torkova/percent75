@@ -557,6 +557,10 @@ input[type='radio'].visually-hidden {
   color: #1b1b1b;
   line-height: 1.2;
 }
+.logo__link img {
+  width: 60px;
+  height: 86px;
+}
 .logo__text {
   margin-left: 5px;
   font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -780,7 +784,6 @@ input[type='radio'].visually-hidden {
 }
 .note {
   color: rgba(255, 255, 255, 0.2);
-  margin-left: auto;
   font-size: 14px;
   font-family: 'Segoe UI', 'Arial', sans-serif;
 }
@@ -829,9 +832,10 @@ input[type='radio'].visually-hidden {
 .site-footer__link:nth-child(3n) {
   margin-bottom: 0;
 }
-.site-footer__link:hover {
+.site-footer__link[href]:hover {
   text-decoration: underline;
 }
 .site-footer__note {
   margin-top: 25px;
+  margin-left: 258px;
 }
