@@ -813,6 +813,12 @@ input[type='radio'].visually-hidden {
   box-sizing: border-box;
   padding-right: 11.8644%;
 }
+@media (max-width: 1180px) {
+  .intro--welcome {
+    background-size: 214px 253px;
+    background-position: 102.5% 2px;
+  }
+}
 .intro--index {
   display: flex;
   flex-shrink: 0;
@@ -1059,6 +1065,7 @@ input[type='radio'].visually-hidden {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
+  min-width: 793px;
 }
 .stats__info {
   width: 22.982%;
@@ -1280,6 +1287,7 @@ input[type='radio'].visually-hidden {
 .deposit__column--shadow {
   box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
   padding-left: 11px;
+  padding-right: 11px;
   box-sizing: border-box;
 }
 .deposit__column--narrow {
