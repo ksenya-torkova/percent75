@@ -465,8 +465,11 @@ input[type='radio'].visually-hidden {
 .flex-wrapper {
   width: 100%;
 }
+.flex-wrapper--padding {
+  padding-left: 301px;
+}
 .site-header {
-  min-height: 100vh;
+  height: 100%;
   max-width: 301px;
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
@@ -474,6 +477,11 @@ input[type='radio'].visually-hidden {
   padding-top: 30px;
   padding-left: 1.5%;
   z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .site-header--close-menu {
   height: 22px;
@@ -481,9 +489,10 @@ input[type='radio'].visually-hidden {
   width: 24px;
   background-color: transparent;
   box-shadow: none;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
+  overflow: visible;
 }
 .site-header__wrapper--no-js {
   display: block;
@@ -686,6 +695,7 @@ input[type='radio'].visually-hidden {
   margin: 0;
   margin-top: 45px;
   padding: 0;
+  padding-bottom: 40px;
   font-size: 18px;
 }
 .language-toogle__item {
@@ -721,6 +731,7 @@ input[type='radio'].visually-hidden {
 }
 .main {
   background-position: top center;
+  padding-top: 139px;
 }
 .main--index {
   padding-top: 148px;
@@ -732,14 +743,12 @@ input[type='radio'].visually-hidden {
   background-image: url('../img/stat-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 660px;
-  padding-top: 139px;
   padding-bottom: 199px;
 }
 .main--faq {
   background-image: url('../img/stat-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 660px;
-  padding-top: 139px;
   padding-bottom: 50px;
 }
 .main--policy {
@@ -754,6 +763,10 @@ input[type='radio'].visually-hidden {
   background-image: url('../img/invest-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main--calc {
+  background-image: url('../img/calc-bg.png');
+  background-repeat: no-repeat;
 }
 .main__wrapper {
   display: flex;
@@ -781,6 +794,8 @@ input[type='radio'].visually-hidden {
 }
 .intro {
   padding-left: 4.322%;
+  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+  background-color: #ffffff;
 }
 .intro--stat {
   padding-bottom: 110px;
@@ -791,8 +806,9 @@ input[type='radio'].visually-hidden {
   background-size: 212px 228px;
   background-position: 99.6% -4px;
 }
-.intro--white {
-  background-color: #ffffff;
+.intro--transparent {
+  background-color: transparent;
+  box-shadow: none;
 }
 .intro--policy {
   width: 80.17%;
@@ -823,7 +839,6 @@ input[type='radio'].visually-hidden {
   display: flex;
   flex-shrink: 0;
   flex-wrap: nowrap;
-  margin-left: 0.59%;
   padding-left: 3.7288%;
 }
 .intro--invest {
@@ -833,7 +848,12 @@ input[type='radio'].visually-hidden {
   padding-left: 2.6%;
   padding-right: 15.65%;
   box-sizing: border-box;
-  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+}
+.intro--calc {
+  background-image: url(../img/calc.png);
+  background-repeat: no-repeat;
+  background-size: 280px 278px;
+  background-position: 100% 0px;
 }
 .intro__text {
   font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -850,6 +870,10 @@ input[type='radio'].visually-hidden {
 .intro__wrapper {
   margin-left: 4.122%;
   width: 55%;
+}
+.intro__mark {
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
+  font-weight: 700;
 }
 .title {
   margin-top: 0;
@@ -1297,6 +1321,26 @@ input[type='radio'].visually-hidden {
 .deposit__title {
   margin-top: 50px;
   margin-bottom: 40px;
+}
+.form {
+  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+.form__column {
+  max-width: 460px;
+}
+.form__label--flex {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .site-footer {
   background-color: #121915;
