@@ -731,44 +731,42 @@ input[type='radio'].visually-hidden {
 }
 .main {
   background-position: top center;
-  padding-top: 139px;
+  background-repeat: no-repeat;
+  padding-top: 130px;
 }
 .main--index {
   padding-top: 148px;
   padding-bottom: 79px;
   background-image: url('../img/index-bg.png');
-  background-repeat: no-repeat;
 }
 .main--stat {
   background-image: url('../img/stat-bg.png');
-  background-repeat: no-repeat;
   background-size: 100% 660px;
+  padding-top: 139px;
   padding-bottom: 199px;
 }
 .main--faq {
   background-image: url('../img/stat-bg.png');
-  background-repeat: no-repeat;
   background-size: 100% 660px;
+  padding-top: 139px;
   padding-bottom: 50px;
 }
 .main--policy {
-  padding-top: 129px;
   padding-bottom: 1px;
   background-image: url('../img/policy-bg.png');
-  background-repeat: no-repeat;
 }
 .main--invest {
-  padding-top: 130px;
   padding-bottom: 90px;
   background-image: url('../img/invest-bg.png');
-  background-repeat: no-repeat;
   background-size: cover;
 }
 .main--calc {
-  padding-top: 130px;
   padding-bottom: 79px;
   background-image: url('../img/calc-bg.png');
-  background-repeat: no-repeat;
+}
+.main--career {
+  background-image: url('../img/career-bg.png');
+  padding-bottom: 49px;
 }
 .main__wrapper {
   display: flex;
@@ -868,6 +866,21 @@ input[type='radio'].visually-hidden {
     background-position: 101% 52px;
   }
 }
+.intro--career {
+  padding-top: 8px;
+  padding-left: 2.5%;
+  padding-bottom: 28px;
+  background-image: url(../img/join.png);
+  background-repeat: no-repeat;
+  background-size: 208px 243px;
+  background-position: 99% 12px;
+  min-width: 793px;
+}
+@media (max-width: 1460px) {
+  .intro--career {
+    background-position: 99% 79%;
+  }
+}
 .intro__text {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   line-height: 24px;
@@ -894,6 +907,15 @@ input[type='radio'].visually-hidden {
     max-width: 84%;
   }
 }
+.intro__text--margin-top {
+  margin-top: 59px;
+  max-width: 877px;
+}
+@media (max-width: 1460px) {
+  .intro__text--margin-top {
+    max-width: 75%;
+  }
+}
 .intro__wrapper {
   margin-left: 4.122%;
   width: 55%;
@@ -915,6 +937,11 @@ input[type='radio'].visually-hidden {
 }
 .title--width {
   max-width: 547px;
+}
+@media (max-width: 1360px) {
+  .title--max-width {
+    max-width: 75%;
+  }
 }
 .title--no-padding {
   padding-top: 0;
@@ -1067,6 +1094,19 @@ input[type='radio'].visually-hidden {
     width: 48%;
   }
 }
+.text-block--income {
+  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+  width: 749px;
+  background-image: url('../img/income.png');
+  background-repeat: no-repeat;
+  background-position: 98% 20px;
+  background-size: 190px 219px;
+  position: relative;
+  z-index: 1;
+  padding-top: 6px;
+  padding-left: 30px;
+  padding-bottom: 35px;
+}
 .text-block__content {
   font-size: 18px;
   line-height: 27px;
@@ -1084,6 +1124,12 @@ input[type='radio'].visually-hidden {
 }
 .text-block__content--margin-top {
   margin-top: 21px;
+}
+.text-block__content + .text-block__content {
+  margin-top: 26px;
+}
+.text-block__content--narrow {
+  max-width: 464px;
 }
 .video {
   box-sizing: border-box;
@@ -1442,6 +1488,10 @@ input[type='radio'].visually-hidden {
   line-height: 24px;
   color: #1b1b1b;
   opacity: 1;
+  background-image: url('../img/check-sign.svg');
+  background-repeat: no-repeat;
+  background-size: 15px 10px;
+  background-position: 98.6% 10px;
 }
 .form__option {
   text-align: center;
@@ -1506,6 +1556,152 @@ input[type='radio'].visually-hidden {
 }
 .button--green {
   color: #55902a;
+}
+.table-block {
+  margin-top: 286px;
+  margin-bottom: 108px;
+}
+@media (max-width: 1440px) {
+  .table-block {
+    margin-top: 21%;
+  }
+}
+.table-block--no-margin {
+  margin: 0;
+  margin-top: -10px;
+}
+.table-block__note {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  line-height: 24px;
+  text-align: center;
+  max-width: 776px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+}
+.table {
+  background-color: #ffffff;
+  margin-top: 53px;
+  border-collapse: collapse;
+  box-shadow: 0 10px 20px 0 rgba(18, 25, 21, 0.1);
+  width: 100%;
+  max-width: 947px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+}
+.table--no-margin {
+  margin: 0;
+  margin-left: 17%;
+  width: 83%;
+}
+@media (max-width: 1200px) {
+  .table--no-margin {
+    margin-left: 13%;
+  }
+}
+.table tbody {
+  display: flex;
+  flex-direction: column;
+}
+.table__row {
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  margin-left: 21px;
+  margin-right: 29px;
+}
+.table__row--no-border {
+  border-bottom: 0;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
+}
+.table__row:last-child {
+  border-bottom: 0;
+  margin-bottom: 2px;
+}
+.table__row--margin {
+  margin-left: 29px;
+  margin-right: 34px;
+  margin-top: 18px;
+  padding-bottom: 24px;
+}
+.table__row--margin .table__th {
+  width: 131px;
+}
+.table__row--margin .table__th--left {
+  width: 107px;
+}
+.table__row--justify {
+  justify-content: space-between;
+}
+.table__th {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.table__th--height {
+  line-height: 35px;
+}
+.table__th--align-left {
+  line-height: 23px;
+  text-align: left;
+  width: 64px;
+}
+.table__th--half-width {
+  width: 52%;
+}
+.table__th--third-width {
+  width: 34%;
+}
+.table__th--indent-1 {
+  margin-right: 6.3%;
+}
+.table__th--indent-1.table__th--align-left {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.table__th--indent-2 {
+  margin-right: 26.8%;
+}
+.table__th--indent-3 {
+  margin-right: 13.5%;
+}
+.table__th--indent-4 {
+  margin-right: 14%;
+}
+.table__th--left {
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.table__td {
+  width: 64px;
+  font-family: 'Roboto Slab', 'Times New Roman', serif;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.table__td--indent-1 {
+  margin-right: 6.3%;
+}
+.table__td--indent-2 {
+  margin-right: 26.8%;
+}
+.table__td--indent-3 {
+  margin-right: 13.5%;
+}
+.table__td--indent-4 {
+  margin-right: 14%;
+}
+.table__td--center {
+  text-align: center;
+  width: 131px;
+}
+.table__td--padding {
+  padding-left: 28px;
+  width: 107px;
+  box-sizing: border-box;
 }
 .site-footer {
   background-color: #121915;
