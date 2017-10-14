@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,9 +79,52 @@
       </div>
     </header>
 
-    <div class="flex-wrapper">
-      <main class="main">
+    <div class="flex-wrapper  flex-wrapper--padding">
+      <main class="main  main--calc">
         <div class="wrapper">
+          <div class="intro  intro--calc">
+            <h1 class="title  title--margin-bottom  title--underline">Калькулятор</h1>
+            <p class="intro__text  intro__text--margin">Рассмотрим пример: <span class="intro__mark">500$</span> инвестиций, <span class="intro__mark">120</span> количество дней = <span class="intro__mark">1500$</span><br>Где — <span class="intro__mark">500$</span> инвестированных Вами <span class="intro__mark">120</span> дней (<span class="intro__mark"></span>4 месяца)- ваши деньги работают в платформе <span class="intro__mark"></span>1800$ — сумма, которую Вы получите через 4 месяца (с телом депозита) Чистый доход — <span class="intro__mark">1300$</span> за <span class="intro__mark">120</span> дней.</p>
+            <p class="intro__text  intro__text--margin">Так же, очень выгодно использовать функцию реинвестирования прибыли, Вы сможете получать еще больший процент.</p>
+            <p class="intro__text  intro__text--margin">Подставьте свою сумму инвестиций и можете просчитать Вашу прибыль через месяц, пол года, год, и так далее!</p>
+          </div>
+          <div class="calc">
+            <h2 class="subtitle  subtitle--centered">Калькулятор расчета невозвратного депозита</h2>
+            <form action="#" class="form  calc__form">
+              <div class="form__column  form__column--padding-right">
+                <div class="form__row">
+                  <label class="form__label" for="tariff">Тариф</label>
+                  <select class="form__select" id="tariff" name="tariff">
+                    <option value="start" class="form__option">Start</option>
+                    <option value="medium" class="form__option" selected>Medium</option>
+                    <option value="premium" class="form__option">Premium</option>
+                  </select>
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="invest">Инвестируете</label>
+                  <input type="text" class="form__input" placeholder="120$" id="invest" name="invest">
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="term">Количество дней</label>
+                  <input type="text" class="form__input" placeholder="40" id="term" name="term">
+                </div>
+              </div>
+              <div class="form__column">
+                <div class="form__row  form__row--margin-small">
+                  <label class="form__label" for="income">Прибыль с учетом<br>инвестированных средств</label>
+                  <input type="text" class="form__input" placeholder="1 800$" id="income" name="income">
+                </div>
+                <div class="form__row  form__row--margin-middle">
+                  <label class="form__label" for="profit">Доходность (%)</label>
+                  <input type="text" class="form__input" placeholder="260$" id="profit" name="profit">
+                </div>
+                <div class="form__row">
+                  <button class="button  form__button" type="button">Рассчитать</button>
+                  <button class="button  form__button  button--green" type="submit">Инвестировать</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </main>
 
