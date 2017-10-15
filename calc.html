@@ -102,24 +102,24 @@
                 </div>
                 <div class="form__row">
                   <label class="form__label" for="invest">Инвестируете</label>
-                  <input type="text" class="form__input" placeholder="120$" id="invest" name="invest">
+                  <input type="number" class="form__input" min="25" placeholder="120$" id="invest" name="invest" required value="">
                 </div>
                 <div class="form__row">
                   <label class="form__label" for="term">Количество дней</label>
-                  <input type="text" class="form__input" placeholder="40" id="term" name="term">
+                  <input type="number" class="form__input" min="25" placeholder="50" id="term" name="term" required value="50" readonly>
                 </div>
               </div>
               <div class="form__column">
                 <div class="form__row  form__row--margin-small">
                   <label class="form__label" for="income">Прибыль с учетом<br>инвестированных средств</label>
-                  <input type="text" class="form__input" placeholder="1 800$" id="income" name="income">
+                  <input type="text" class="form__input" placeholder="1 800$" id="income" name="income" readonly>
                 </div>
                 <div class="form__row  form__row--margin-middle">
                   <label class="form__label" for="profit">Доходность (%)</label>
-                  <input type="text" class="form__input" placeholder="260$" id="profit" name="profit">
+                  <input type="text" class="form__input" placeholder="260$" id="profit" name="profit" readonly>
                 </div>
                 <div class="form__row">
-                  <button class="button  form__button" type="button">Рассчитать</button>
+                  <button class="button  form__button" type="button" id="calc-button">Рассчитать</button>
                   <button class="button  form__button  button--green" type="submit">Инвестировать</button>
                 </div>
               </div>
