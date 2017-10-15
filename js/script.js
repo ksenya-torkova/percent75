@@ -74,6 +74,3 @@ calcButton.addEventListener('click', function (evt) {
     invest.classList.add('form__input--error');
   }
 });
-
-// tabs script
-
