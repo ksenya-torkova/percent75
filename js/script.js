@@ -44,6 +44,9 @@ var selectTariff = function () {
     case 'premium':
       tariffValue = 1.25;
       break;
+    case 'unlimit':
+      tariffValue = 2.5;
+      break;
   }
 
   return tariffValue;
@@ -53,12 +56,25 @@ tariff.addEventListener('change', function () {
   if (selectTariff() === 0.75) {
     term.value = 25;
     invest.min = 25;
+    term.setAttribute('readonly', '');
+    invest.setAttribute('placeholder', '25$ - 250&');
   } else if (selectTariff() === 1) {
     term.value = 50;
     invest.min = 250;
+    term.setAttribute('readonly', '');
+    invest.setAttribute('placeholder', '250$ - 750$');
   } else if (selectTariff() === 1.25) {
     term.value = 75;
     invest.min = 750;
+    term.setAttribute('readonly', '');
+    invest.setAttribute('placeholder', 'от 750$');
+  } else if (selectTariff() === 2.5) {
+    term.value = '1';
+    term.setAttribute('placeholder', 'бессрочно');
+    term.setAttribute('min', '1');
+    term.removeAttribute('readonly', '');
+    invest.min = 25;
+    invest.setAttribute('placeholder', '25$ - 999999$');
   }
 });
 
@@ -70,6 +86,8 @@ calcButton.addEventListener('click', function (evt) {
     invest.style.background='white';
     income.value = parseInt(invest.value, 10) + (parseInt(invest.value, 10) / 100) * selectTariff() * parseInt(term.value, 10);
     profit.value = selectTariff() * parseInt(term.value, 10) + '%';
+  } else if (term.value === 'бессрочно') {
+    term.classList.add('form__input--error');
   } else if (invest.validity.valueMissing || invest.validity.rangeUnderflow) {
     invest.classList.add('form__input--error');
   }
