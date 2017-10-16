@@ -57,7 +57,7 @@ tariff.addEventListener('change', function () {
     term.value = 25;
     invest.min = 25;
     term.setAttribute('readonly', '');
-    invest.setAttribute('placeholder', '25$ - 250&');
+    invest.setAttribute('placeholder', '25$ - 250$');
   } else if (selectTariff() === 1) {
     term.value = 50;
     invest.min = 250;
