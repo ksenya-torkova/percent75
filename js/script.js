@@ -59,6 +59,7 @@ tariff.addEventListener('change', function () {
     invest.min = 25;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', '25$ - 250$');
+    invest.value = '';
     income.value = '';
     profit.value = '';
   } else if (selectTariff() === 1) {
@@ -66,6 +67,7 @@ tariff.addEventListener('change', function () {
     invest.min = 250;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', '250$ - 750$');
+    invest.value = '';
     income.value = '';
     profit.value = '';
   } else if (selectTariff() === 1.25) {
@@ -73,6 +75,7 @@ tariff.addEventListener('change', function () {
     invest.min = 750;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', 'от 750$');
+    invest.value = '';
     income.value = '';
     profit.value = '';
   } else if (selectTariff() === 2.5) {
@@ -82,6 +85,7 @@ tariff.addEventListener('change', function () {
     term.removeAttribute('readonly', '');
     invest.min = 25;
     invest.setAttribute('placeholder', '25$ - 999999$');
+    invest.value = '';
     income.value = '';
     profit.value = '';
   }
