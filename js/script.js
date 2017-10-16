@@ -30,6 +30,7 @@ var term = calcForm.querySelector('#term');
 var income = calcForm.querySelector('#income');
 var profit = calcForm.querySelector('#profit');
 var calcButton = calcForm.querySelector('#calc-button');
+var formSubmit = calcForm.querySelector('#submit-button');
 
 var selectTariff = function () {
   var tariffValue = null;
@@ -58,37 +59,54 @@ tariff.addEventListener('change', function () {
     invest.min = 25;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', '25$ - 250$');
+    income.value = '';
+    profit.value = '';
   } else if (selectTariff() === 1) {
     term.value = 50;
     invest.min = 250;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', '250$ - 750$');
+    income.value = '';
+    profit.value = '';
   } else if (selectTariff() === 1.25) {
     term.value = 75;
     invest.min = 750;
     term.setAttribute('readonly', '');
     invest.setAttribute('placeholder', 'от 750$');
+    income.value = '';
+    profit.value = '';
   } else if (selectTariff() === 2.5) {
-    term.value = '1';
+    term.value = '';
     term.setAttribute('placeholder', 'бессрочно');
     term.setAttribute('min', '1');
     term.removeAttribute('readonly', '');
     invest.min = 25;
     invest.setAttribute('placeholder', '25$ - 999999$');
+    income.value = '';
+    profit.value = '';
   }
 });
 
 calcButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   
-  if (parseInt(invest.value, 10) >= parseInt(invest.min, 10)) {
-    invest.classList.remove('form__input--error');
-    invest.style.background='white';
-    income.value = parseInt(invest.value, 10) + (parseInt(invest.value, 10) / 100) * selectTariff() * parseInt(term.value, 10);
-    profit.value = selectTariff() * parseInt(term.value, 10) + '%';
-  } else if (term.value === 'бессрочно') {
+  if (term.validity.valueMissing) {
     term.classList.add('form__input--error');
   } else if (invest.validity.valueMissing || invest.validity.rangeUnderflow) {
     invest.classList.add('form__input--error');
+  } else if (parseInt(invest.value, 10) >= parseInt(invest.min, 10)) {
+    invest.classList.remove('form__input--error');
+    term.classList.remove('form__input--error');
+    income.value = parseInt(invest.value, 10) + (parseInt(invest.value, 10) / 100) * selectTariff() * parseInt(term.value, 10);
+    profit.value = income.value - parseInt(invest.value, 10);
   }
 });
+
+var cancelEnterSubmit = function (evt) {
+  if (evt.keyCode === 13) {
+    evt.preventDefault();
+  }
+};
+
+formSubmit.addEventListener('keydown', cancelEnterSubmit);
+calcForm.addEventListener('keydown', cancelEnterSubmit);

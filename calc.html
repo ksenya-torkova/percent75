@@ -106,21 +106,21 @@
                 </div>
                 <div class="form__row">
                   <label class="form__label" for="term">Количество дней</label>
-                  <input type="number" class="form__input" min="25" placeholder="50" id="term" name="term" required readonly>
+                  <input type="number" class="form__input" min="25" placeholder="50" id="term" name="term" required readonly value="50">
                 </div>
               </div>
               <div class="form__column">
                 <div class="form__row  form__row--margin-small">
                   <label class="form__label" for="income">Прибыль с учетом<br>инвестированных средств</label>
-                  <input type="text" class="form__input" placeholder="1 800$" id="income" name="income" readonly>
+                  <input type="text" class="form__input" placeholder="0" id="income" name="income" readonly>
                 </div>
                 <div class="form__row  form__row--margin-middle">
-                  <label class="form__label" for="profit">Доходность (%)</label>
-                  <input type="text" class="form__input" placeholder="260$" id="profit" name="profit" readonly>
+                  <label class="form__label" for="profit">Доходность</label>
+                  <input type="text" class="form__input" placeholder="0" id="profit" name="profit" readonly>
                 </div>
                 <div class="form__row">
                   <button class="button  form__button" type="button" id="calc-button">Рассчитать</button>
-                  <button class="button  form__button  button--green" type="submit">Инвестировать</button>
+                  <button class="button  form__button  button--green" type="submit" id="submit-button">Инвестировать</button>
                 </div>
               </div>
             </form>
